@@ -10,6 +10,7 @@
 		876311E7266FB539004F6796 /* AnalyticFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 876311DD266FB538004F6796 /* AnalyticFramework.framework */; };
 		876311EC266FB539004F6796 /* AnalyticFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876311EB266FB539004F6796 /* AnalyticFrameworkTests.swift */; };
 		876311EE266FB539004F6796 /* AnalyticFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 876311E0266FB538004F6796 /* AnalyticFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		876311F8266FB5B7004F6796 /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876311F7266FB5B7004F6796 /* Analytics.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		876311E6266FB539004F6796 /* AnalyticFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnalyticFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		876311EB266FB539004F6796 /* AnalyticFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticFrameworkTests.swift; sourceTree = "<group>"; };
 		876311ED266FB539004F6796 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		876311F7266FB5B7004F6796 /* Analytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				876311E0266FB538004F6796 /* AnalyticFramework.h */,
+				876311F7266FB5B7004F6796 /* Analytics.swift */,
 				876311E1266FB538004F6796 /* Info.plist */,
 			);
 			path = AnalyticFramework;
@@ -147,6 +150,7 @@
 				TargetAttributes = {
 					876311DC266FB538004F6796 = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 					};
 					876311E5266FB539004F6796 = {
 						CreatedOnToolsVersion = 12.5;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				876311F8266FB5B7004F6796 /* Analytics.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		876311F2266FB539004F6796 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -356,6 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.programmingwithswift.AnalyticFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +371,7 @@
 		876311F3266FB539004F6796 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -387,6 +395,7 @@
 		876311F5266FB539004F6796 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AnalyticFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -404,6 +413,7 @@
 		876311F6266FB539004F6796 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AnalyticFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
